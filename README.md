@@ -1,2 +1,2 @@
 # casces-website
-Building practical companies that solve real problems.
+CasCes builds intelligent products that turn complexity into clarity and action.

@@ -3,38 +3,211 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CasCes</title>
+  <meta name="description" content="CasCes builds intelligent products that turn complexity into clarity and action.">
+  <title>CasCes | From complexity to action</title>
   <style>
+    :root {
+      --ink: #1b292d;
+      --muted: #677276;
+      --paper: #f7f8f7;
+      --line: #e0e5e3;
+      --accent: #477a74;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      max-width: 700px;
-      margin: 80px auto;
-      padding: 20px;
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Segoe UI", Tahoma, sans-serif;
       line-height: 1.6;
-      color: #222;
     }
+
+    header,
+    main,
+    footer {
+      width: min(100% - 3rem, 1080px);
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 1.75rem 0;
+    }
+
+    .wordmark {
+      color: var(--ink);
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 700;
+      letter-spacing: -0.07em;
+    }
+
+    .intro {
+      border-top: 1px solid var(--line);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      min-height: 0;
+      padding: 1.5rem 0 2.5rem;
+    }
+
     h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
+      font-size: clamp(1.45rem, 2.7vw, 2.25rem);
+      font-weight: 500;
+      letter-spacing: -0.025em;
+      line-height: 1.2;
+      margin: 0;
+      max-width: 570px;
     }
+
     p {
-      font-size: 1.2rem;
+      color: var(--muted);
+      font-size: 1rem;
+      margin: 0;
+      max-width: 620px;
+    }
+
+    .lead {
+      color: var(--muted);
+      font-size: 1rem;
+      margin-top: 1.5rem;
+      max-width: 490px;
+    }
+
+    section {
+      padding: clamp(2.25rem, 5vw, 3.5rem) 0;
+    }
+
+    h2 {
+      color: var(--muted);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      margin: 0 0 1.25rem;
+      text-transform: uppercase;
+    }
+
+    .approach-section {
+      border-bottom: 1px solid var(--line);
+      border-top: 1px solid var(--line);
+      padding-bottom: clamp(2.75rem, 5vw, 4rem);
+      padding-top: clamp(2.75rem, 5vw, 4rem);
+    }
+
+    .approach {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 0.7rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .approach span {
+      color: var(--ink);
+      font-size: clamp(1.65rem, 4vw, 3.25rem);
+      font-weight: 400;
+      letter-spacing: -0.05em;
+      line-height: 1;
+    }
+
+    .approach .arrow {
+      color: var(--accent);
+      font-size: clamp(1.2rem, 2vw, 1.6rem);
+      font-weight: 400;
+    }
+
+    .products {
+      max-width: 820px;
+      padding-bottom: clamp(2.75rem, 5vw, 4rem);
+      padding-top: clamp(2.25rem, 4vw, 3.5rem);
+    }
+
+    .product {
+      border-left: 2px solid var(--accent);
+      padding-left: clamp(1.5rem, 4vw, 2.75rem);
+    }
+
+    h3 {
+      color: var(--ink);
+      font-size: clamp(1.8rem, 4vw, 2.75rem);
+      font-weight: 600;
+      letter-spacing: -0.025em;
+      line-height: 1.2;
+      margin: 0 0 1.25rem;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 0.85rem;
+      letter-spacing: 0.04em;
+      padding: 1rem 0 2.5rem;
+      text-align: right;
+    }
+
+    @media (max-width: 480px) {
+      header,
+      main,
+      footer {
+        width: min(100% - 2rem, 1080px);
+      }
+
+      header {
+        padding: 1.5rem 0;
+      }
+
+      .intro {
+        min-height: 0;
+        padding-bottom: 2rem;
+      }
+
+      .approach {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.65rem;
+      }
+
+      .approach .arrow {
+        transform: rotate(90deg);
+      }
     }
   </style>
 </head>
 <body>
-  <h1>CasCes</h1>
+  <header>
+    <div class="wordmark">CasCes</div>
+  </header>
 
-<p><strong>A startup studio building practical companies.</strong></p>
+  <main>
+    <section class="intro" aria-labelledby="intro-title">
+      <h1 id="intro-title">We build intelligent products that turn complexity into clarity and action.</h1>
+      <p class="lead">We focus on difficult, real-world problems where better technology can help people understand their situation and take meaningful action.</p>
+    </section>
 
-<p>
-We create products that solve real problems, starting with finance,
-data and decision-making.
-</p>
+    <section class="approach-section" aria-labelledby="approach-title">
+      <h2 id="approach-title">Our approach</h2>
+      <div class="approach" aria-label="Complexity to Clarity to Action">
+        <span>Complexity</span>
+        <span class="arrow" aria-hidden="true">â†’</span>
+        <span>Clarity</span>
+        <span class="arrow" aria-hidden="true">â†’</span>
+        <span>Action</span>
+      </div>
+      <p>We build around real user value, meaningful innovation and exceptional quality.</p>
+    </section>
 
-<h2>Current venture</h2>
+    <section class="products" aria-labelledby="products-title">
+      <h2 id="products-title">Our products</h2>
+      <article class="product">
+        <h3>Financial Copilot MÃ©xico</h3>
+        <p>A financial copilot designed to help people in Mexico understand their financial situation and find a realistic path out of consumer debt.</p>
+      </article>
+    </section>
+  </main>
 
-<p><strong>Mexico en Datos</strong><br>
-Coming soon.</p>
+  <footer>CasCes</footer>
 </body>
 </html>
