@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="CasCes builds intelligent products that turn complexity into clarity and action.">
-  <title>CasCes | From complexity to action</title>
+  <meta name="description" content="CasCes identifies real problems and builds practical technology solutions.">
+  <title>CasCes | Practical technology for real problems</title>
   <style>
     :root {
       --ink: #1b292d;
@@ -124,9 +124,48 @@
       padding-top: clamp(2.25rem, 4vw, 3.5rem);
     }
 
+    .product + .product {
+      margin-top: 2.25rem;
+    }
+
     .product {
       border-left: 2px solid var(--accent);
       padding-left: clamp(1.5rem, 4vw, 2.75rem);
+    }
+
+    .status {
+      display: block;
+      color: var(--accent);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+    }
+
+    .product-link, .contact-link {
+      color: var(--ink);
+      text-decoration-color: var(--accent);
+      text-underline-offset: 0.25em;
+    }
+
+    .product-link:hover, .contact-link:hover {
+      color: var(--accent);
+    }
+
+    .product-link:focus-visible, .contact-link:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 4px;
+    }
+
+    .product-detail {
+      margin-top: 0.8rem;
+    }
+
+    .contact {
+      border-top: 1px solid var(--line);
+      padding-top: 2.25rem;
+      padding-bottom: 2.5rem;
     }
 
     h3 {
@@ -183,8 +222,8 @@
 
   <main>
     <section class="intro" aria-labelledby="intro-title">
-      <h1 id="intro-title">We build intelligent products that turn complexity into clarity and action.</h1>
-      <p class="lead">We focus on difficult, real-world problems where better technology can help people understand their situation and take meaningful action.</p>
+      <h1 id="intro-title">We turn real problems into practical technology solutions.</h1>
+      <p class="lead">We identify meaningful problems and build thoughtful products that help people and teams work, decide and move forward.</p>
     </section>
 
     <section class="approach-section" aria-labelledby="approach-title">
@@ -202,9 +241,22 @@
     <section class="products" aria-labelledby="products-title">
       <h2 id="products-title">Our products</h2>
       <article class="product">
-        <h3>Financial Copilot M&eacute;xico</h3>
-        <p>A financial copilot designed to help people in Mexico understand their financial situation and find a realistic path out of consumer debt.</p>
+        <span class="status">In development</span>
+        <h3>Pulso</h3>
+        <p lang="es">Tu espacio. Tu trabajo. Tu equipo.</p>
+        <p class="product-detail" lang="es">El trabajo cotidiano construye autom&aacute;ticamente el seguimiento del proyecto.</p>
+        <p class="product-detail" lang="es">Mi trabajo organiza prioridades y entregables. Vista general facilita el seguimiento y la coordinaci&oacute;n. Actividad muestra acontecimientos relevantes del proyecto.</p>
+        <p class="product-detail"><a class="product-link" href="https://fjcs1980.github.io/casces-pulso/" target="_blank" rel="noopener noreferrer" aria-label="Explore Pulso demo (opens in a new tab)">Explore the Pulso demo &rarr;</a></p>
       </article>
+      <article class="product">
+        <span class="status">In development</span>
+        <h3>Financial Copilot Mexico</h3>
+        <p>A financial planning initiative focused on helping people understand their finances and make better decisions.</p>
+      </article>
+    </section>
+    <section class="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <p><a class="contact-link" href="mailto:hello@casces.com">hello@casces.com</a></p>
     </section>
   </main>
 
